@@ -1,62 +1,58 @@
-
 * {
-    box-sizing: border-box;
-}
-
-p {
-    border: 1px solid black;
-    /*background-color:;*/
-    width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
     font-family: Helvetica;
-    color: black;
 }
 
-h2 {
-    font-size: 18px;
-    color: #131313;
-    border: 1px solid #131313;
-    float:right;
-    padding: 1%;
-
-}
-body{
-
-    font-family: Open Sans;
+body {
+    font-size: medium;
 }
 
-
-h1 {
-    color: #25438d;
-    text-align:center;
+.content {
+    border: 1px solid black;
+    position: relative;
+    padding: 30px 10px 10px 10px;
+    margin: 10px;
+    background-color: #C0C0C0;
 }
 
-
-.row {
-    width: 100%;
+.section {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 125%;
 }
 
-.blue {
-    background-color: #25438d;
+#header {
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
 }
 
-.red {
-    background-color: #b42d2a;
+#chicken {
+    background-color: pink;
+}
+
+#beef {
+    background-color: red;
     color: white;
 }
 
-.grey {
-    background-color: #cecece;
-}
-.fl-right{
-position: relative;
-    top: 0px;
-    float:right;
+#sushi {
+    background-color: #FFFF99;
 }
 
-@media (min-width: 992px)  {
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+/********** Desktop **********/
+
+@media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
         border: 1px solid green;
@@ -71,7 +67,7 @@ position: relative;
         width: 25%;
     }
     .col-lg-4 {
-        width: 33.33%;
+        width: 28%;
     }
     .col-lg-5 {
         width: 41.66%;
@@ -99,6 +95,9 @@ position: relative;
     }
 }
 
+
+/********** Tablet **********/
+
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
@@ -117,7 +116,7 @@ position: relative;
         width: 33.33%;
     }
     .col-md-5 {
-        width: 41.66%;
+        width: 290px;
     }
     .col-md-6 {
         width: 50%;
@@ -135,12 +134,14 @@ position: relative;
         width: 83.33%;
     }
     .col-md-11 {
-        width: 91.66%;
+        width: 621px;
     }
     .col-md-12 {
         width: 100%;
     }
 }
+
+/********** Mobile **********/
 
 @media (max-width: 767px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
